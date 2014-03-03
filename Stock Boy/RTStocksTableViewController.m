@@ -20,6 +20,7 @@
 @property (nonatomic, assign) NSInteger counter;
 @property (weak, nonatomic) IBOutlet UILabel *livingExpenseLabel;
 @property (weak, nonatomic) IBOutlet UILabel *livingExpenseAmountLabel;
+@property (nonatomic, assign) NSInteger livingExpense;
 
 @end
 
@@ -46,10 +47,11 @@
     self.stocks = [RTStartingStockFactory generateStartingStocks];
     self.player = [[RTPlayer alloc] init];
     self.cashLabel.text = [@"$" stringByAppendingString:[@(self.player.cash) stringValue]];
-    self.livingExpenseLabel.hidden = YES;
-    self.livingExpenseAmountLabel.hidden = YES;
+    self.livingExpenseLabel.textColor = [UIColor clearColor];
+    self.livingExpenseAmountLabel.textColor = [UIColor clearColor];
+    self.livingExpense = 10;
     self.counter = 0;
-    self.timer = [NSTimer scheduledTimerWithTimeInterval:0.3f
+    self.timer = [NSTimer scheduledTimerWithTimeInterval:0.15f
                                                   target:self
                                                 selector:@selector(timerUpdate)
                                                 userInfo:nil
@@ -149,18 +151,20 @@
 }
 
 -(void)timerUpdate {
-    if ((self.counter >= 28)&&(self.counter % 28 == 0)) {
-        self.livingExpenseLabel.hidden = NO;
-        self.livingExpenseAmountLabel.hidden = NO;
-        self.player.cash -= 10;
+    if ((self.counter >= 40)&&(self.counter % 40 == 0)) {
+        self.livingExpenseAmountLabel.text = [@"-$" stringByAppendingString:[NSString stringWithFormat:@"%ld", self.livingExpense]];
+        self.livingExpenseLabel.textColor = [UIColor redColor];
+        self.livingExpenseAmountLabel.textColor = [UIColor redColor];
+        self.player.cash -= self.livingExpense;
         self.cashLabel.text = [@"$" stringByAppendingString:[NSString stringWithFormat:@"%ld", self.player.cash]];
-    } else if (self.counter % 30 == 0) {
-        self.livingExpenseAmountLabel.hidden = YES;
-        self.livingExpenseLabel.hidden = YES;
+        self.livingExpense *= 1.15;
+    } else {
+        self.livingExpenseLabel.textColor = [UIColor alphaFadeGivenColor:self.livingExpenseLabel.textColor];
+        self.livingExpenseAmountLabel.textColor = [UIColor alphaFadeGivenColor:self.livingExpenseAmountLabel.textColor];
     }
     for (RTStock *thisStock in self.stocks) {
         NSInteger priceChange;
-        NSInteger r = arc4random_uniform(28);
+        NSInteger r = arc4random_uniform(60);
         if (r > 12) {
             priceChange = 0;
         } else if (r > 10) {
@@ -177,9 +181,11 @@
             priceChange = 1;
         }
         if (priceChange > 0) {
-            thisStock.stockCell.backgroundColor = [UIColor colorWithRed:0.814 green:1.000 blue:0.837 alpha:1.000];
+            thisStock.stockCell.backgroundColor = [UIColor colorWithRed:0.9 green:1.000 blue:0.95 alpha:1.000];
+            //thisStock.stockCell.backgroundColor = [UIColor greenenGivenColor:thisStock.stockCell.backgroundColor];
         } else if (priceChange < 0) {
-            thisStock.stockCell.backgroundColor = [UIColor colorWithRed:1.000 green:0.759 blue:0.792 alpha:1.000];
+            thisStock.stockCell.backgroundColor = [UIColor colorWithRed:1.000 green:0.9 blue:0.95 alpha:1.000];
+            //thisStock.stockCell.backgroundColor = [UIColor reddenGivenColor:thisStock.stockCell.backgroundColor];
         } else  if (priceChange == 0) {
             thisStock.stockCell.backgroundColor = [UIColor lightenGivenColor:thisStock.stockCell.backgroundColor];
         }

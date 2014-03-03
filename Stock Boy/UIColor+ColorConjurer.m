@@ -23,10 +23,27 @@
 }
 
 +(UIColor *)lightenGivenColor:(UIColor *)givenColor {
-    //return [UIColor blueColor];
     CGFloat r,g,b,a;
     [givenColor getRed:&r green:&g blue:&b alpha:&a];
-    return [UIColor colorWithRed:r*1.2 green:g*1.2 blue:b*1.2 alpha:1.0];
+    return [UIColor colorWithRed:r*1.03 green:g*1.03 blue:b*1.03 alpha:1.0];
+}
+
++(UIColor *)alphaFadeGivenColor:(UIColor *)givenColor {
+    CGFloat r,g,b,a;
+    [givenColor getRed:&r green:&g blue:&b alpha:&a];
+    return [UIColor colorWithRed:r green:g blue:b alpha:a*0.85];
+}
+
++(UIColor *)reddenGivenColor:(UIColor *)givenColor {
+    CGFloat r,g,b,a;
+    [givenColor getRed:&r green:&g blue:&b alpha:&a];
+    return [UIColor colorWithRed:r*0.8 green:g blue:b alpha:1.0];
+}
+
++(UIColor *)greenenGivenColor:(UIColor *)givenColor {
+    CGFloat r,g,b,a;
+    [givenColor getRed:&r green:&g blue:&b alpha:&a];
+    return [UIColor colorWithRed:r green:g*0.8 blue:b alpha:1.0];
 }
 
 @end

@@ -14,7 +14,7 @@
 +(NSMutableArray *)generateStartingStocks {
     NSMutableArray *startingStocks = [NSMutableArray new];
     NSString *namePrefix = @"Corp ";
-    for (NSInteger i = 0; i < 40; i++) {
+    for (NSInteger i = 0; i < 16; i++) {
         RTStock *newStock = [[RTStock alloc] initWithName:[namePrefix stringByAppendingString:[@(i) stringValue]] price:[self randomPrice] shares:[self randomShare]];
         [startingStocks addObject:newStock];
     }

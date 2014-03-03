@@ -12,5 +12,9 @@
 
 + (UIColor *)returnRandomColor;
 + (UIColor *)lightenGivenColor:(UIColor *)givenColor;
++ (UIColor *)alphaFadeGivenColor:(UIColor *)givenColor;
++ (UIColor *)reddenGivenColor:(UIColor *)givenColor;
++ (UIColor *)greenenGivenColor:(UIColor *)givenColor;
+
 
 @end
