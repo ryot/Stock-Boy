@@ -1,0 +1,628 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		FA62F8D018C413F7004A9269 /* Icon-40.png in Resources */ = {isa = PBXBuildFile; fileRef = FA62F8C018C413F7004A9269 /* Icon-40.png */; };
+		FA62F8D118C413F7004A9269 /* Icon-40@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FA62F8C118C413F7004A9269 /* Icon-40@2x.png */; };
+		FA62F8D218C413F7004A9269 /* Icon-60.png in Resources */ = {isa = PBXBuildFile; fileRef = FA62F8C218C413F7004A9269 /* Icon-60.png */; };
+		FA62F8D318C413F7004A9269 /* Icon-60@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FA62F8C318C413F7004A9269 /* Icon-60@2x.png */; };
+		FA62F8D418C413F7004A9269 /* Icon-72.png in Resources */ = {isa = PBXBuildFile; fileRef = FA62F8C418C413F7004A9269 /* Icon-72.png */; };
+		FA62F8D518C413F7004A9269 /* Icon-72@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FA62F8C518C413F7004A9269 /* Icon-72@2x.png */; };
+		FA62F8D618C413F7004A9269 /* Icon-76.png in Resources */ = {isa = PBXBuildFile; fileRef = FA62F8C618C413F7004A9269 /* Icon-76.png */; };
+		FA62F8D718C413F7004A9269 /* Icon-76@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FA62F8C718C413F7004A9269 /* Icon-76@2x.png */; };
+		FA62F8D818C413F7004A9269 /* Icon-Small-50.png in Resources */ = {isa = PBXBuildFile; fileRef = FA62F8C818C413F7004A9269 /* Icon-Small-50.png */; };
+		FA62F8D918C413F7004A9269 /* Icon-Small-50@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FA62F8C918C413F7004A9269 /* Icon-Small-50@2x.png */; };
+		FA62F8DA18C413F7004A9269 /* Icon-Small.png in Resources */ = {isa = PBXBuildFile; fileRef = FA62F8CA18C413F7004A9269 /* Icon-Small.png */; };
+		FA62F8DB18C413F7004A9269 /* Icon-Small@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FA62F8CB18C413F7004A9269 /* Icon-Small@2x.png */; };
+		FA62F8DC18C413F7004A9269 /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = FA62F8CC18C413F7004A9269 /* Icon.png */; };
+		FA62F8DD18C413F7004A9269 /* Icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FA62F8CD18C413F7004A9269 /* Icon@2x.png */; };
+		FA62F8DE18C413F7004A9269 /* iTunesArtwork.png in Resources */ = {isa = PBXBuildFile; fileRef = FA62F8CE18C413F7004A9269 /* iTunesArtwork.png */; };
+		FA62F8DF18C413F7004A9269 /* iTunesArtwork@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FA62F8CF18C413F7004A9269 /* iTunesArtwork@2x.png */; };
+		FA62F8E218C41E36004A9269 /* UIColor+ColorConjurer.m in Sources */ = {isa = PBXBuildFile; fileRef = FA62F8E118C41E36004A9269 /* UIColor+ColorConjurer.m */; };
+		FAD4586118C128AB0068C100 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FAD4586018C128AB0068C100 /* Foundation.framework */; };
+		FAD4586318C128AB0068C100 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FAD4586218C128AB0068C100 /* CoreGraphics.framework */; };
+		FAD4586518C128AB0068C100 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FAD4586418C128AB0068C100 /* UIKit.framework */; };
+		FAD4586B18C128AB0068C100 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = FAD4586918C128AB0068C100 /* InfoPlist.strings */; };
+		FAD4586D18C128AB0068C100 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FAD4586C18C128AB0068C100 /* main.m */; };
+		FAD4587118C128AB0068C100 /* RTAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FAD4587018C128AB0068C100 /* RTAppDelegate.m */; };
+		FAD4587418C128AB0068C100 /* Main_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FAD4587218C128AB0068C100 /* Main_iPhone.storyboard */; };
+		FAD4587718C128AB0068C100 /* Main_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FAD4587518C128AB0068C100 /* Main_iPad.storyboard */; };
+		FAD4587A18C128AB0068C100 /* RTViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FAD4587918C128AB0068C100 /* RTViewController.m */; };
+		FAD4587C18C128AB0068C100 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FAD4587B18C128AB0068C100 /* Images.xcassets */; };
+		FAD4588318C128AC0068C100 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FAD4588218C128AC0068C100 /* XCTest.framework */; };
+		FAD4588418C128AC0068C100 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FAD4586018C128AB0068C100 /* Foundation.framework */; };
+		FAD4588518C128AC0068C100 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FAD4586418C128AB0068C100 /* UIKit.framework */; };
+		FAD4588D18C128AC0068C100 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = FAD4588B18C128AC0068C100 /* InfoPlist.strings */; };
+		FAD4588F18C128AC0068C100 /* Stock_BoyTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FAD4588E18C128AC0068C100 /* Stock_BoyTests.m */; };
+		FAD4589918C12B9B0068C100 /* stock boy placeholder Sergey Konyakin.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FAD4589818C12B9A0068C100 /* stock boy placeholder Sergey Konyakin.jpg */; };
+		FAD458A018C12FFA0068C100 /* RTStocksTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FAD4589F18C12FFA0068C100 /* RTStocksTableViewController.m */; };
+		FAD458A318C1306A0068C100 /* RTStockTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FAD458A218C1306A0068C100 /* RTStockTableViewCell.m */; };
+		FAD458A618C139CD0068C100 /* RTStock.m in Sources */ = {isa = PBXBuildFile; fileRef = FAD458A518C139CD0068C100 /* RTStock.m */; };
+		FAD458A918C139EB0068C100 /* RTStartingStockFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = FAD458A818C139EB0068C100 /* RTStartingStockFactory.m */; };
+		FAFA813A18C2CEBA003E34B0 /* RTPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = FAFA813918C2CEBA003E34B0 /* RTPlayer.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		FAD4588618C128AC0068C100 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FAD4585518C128AB0068C100 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FAD4585C18C128AB0068C100;
+			remoteInfo = "Stock Boy";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		FA62F8C018C413F7004A9269 /* Icon-40.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Icon-40.png"; path = "../Icon-40.png"; sourceTree = "<group>"; };
+		FA62F8C118C413F7004A9269 /* Icon-40@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Icon-40@2x.png"; path = "../Icon-40@2x.png"; sourceTree = "<group>"; };
+		FA62F8C218C413F7004A9269 /* Icon-60.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Icon-60.png"; path = "../Icon-60.png"; sourceTree = "<group>"; };
+		FA62F8C318C413F7004A9269 /* Icon-60@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Icon-60@2x.png"; path = "../Icon-60@2x.png"; sourceTree = "<group>"; };
+		FA62F8C418C413F7004A9269 /* Icon-72.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Icon-72.png"; path = "../Icon-72.png"; sourceTree = "<group>"; };
+		FA62F8C518C413F7004A9269 /* Icon-72@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Icon-72@2x.png"; path = "../Icon-72@2x.png"; sourceTree = "<group>"; };
+		FA62F8C618C413F7004A9269 /* Icon-76.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Icon-76.png"; path = "../Icon-76.png"; sourceTree = "<group>"; };
+		FA62F8C718C413F7004A9269 /* Icon-76@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Icon-76@2x.png"; path = "../Icon-76@2x.png"; sourceTree = "<group>"; };
+		FA62F8C818C413F7004A9269 /* Icon-Small-50.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Icon-Small-50.png"; path = "../Icon-Small-50.png"; sourceTree = "<group>"; };
+		FA62F8C918C413F7004A9269 /* Icon-Small-50@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Icon-Small-50@2x.png"; path = "../Icon-Small-50@2x.png"; sourceTree = "<group>"; };
+		FA62F8CA18C413F7004A9269 /* Icon-Small.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Icon-Small.png"; path = "../Icon-Small.png"; sourceTree = "<group>"; };
+		FA62F8CB18C413F7004A9269 /* Icon-Small@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Icon-Small@2x.png"; path = "../Icon-Small@2x.png"; sourceTree = "<group>"; };
+		FA62F8CC18C413F7004A9269 /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Icon.png; path = ../Icon.png; sourceTree = "<group>"; };
+		FA62F8CD18C413F7004A9269 /* Icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Icon@2x.png"; path = "../Icon@2x.png"; sourceTree = "<group>"; };
+		FA62F8CE18C413F7004A9269 /* iTunesArtwork.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = iTunesArtwork.png; path = ../iTunesArtwork.png; sourceTree = "<group>"; };
+		FA62F8CF18C413F7004A9269 /* iTunesArtwork@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "iTunesArtwork@2x.png"; path = "../iTunesArtwork@2x.png"; sourceTree = "<group>"; };
+		FA62F8E018C41E36004A9269 /* UIColor+ColorConjurer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+ColorConjurer.h"; sourceTree = "<group>"; };
+		FA62F8E118C41E36004A9269 /* UIColor+ColorConjurer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+ColorConjurer.m"; sourceTree = "<group>"; };
+		FAD4585D18C128AB0068C100 /* Stock Boy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Stock Boy.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FAD4586018C128AB0068C100 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		FAD4586218C128AB0068C100 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		FAD4586418C128AB0068C100 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		FAD4586818C128AB0068C100 /* Stock Boy-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Stock Boy-Info.plist"; sourceTree = "<group>"; };
+		FAD4586A18C128AB0068C100 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		FAD4586C18C128AB0068C100 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		FAD4586E18C128AB0068C100 /* Stock Boy-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Stock Boy-Prefix.pch"; sourceTree = "<group>"; };
+		FAD4586F18C128AB0068C100 /* RTAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RTAppDelegate.h; sourceTree = "<group>"; };
+		FAD4587018C128AB0068C100 /* RTAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RTAppDelegate.m; sourceTree = "<group>"; };
+		FAD4587318C128AB0068C100 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPhone.storyboard; sourceTree = "<group>"; };
+		FAD4587618C128AB0068C100 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPad.storyboard; sourceTree = "<group>"; };
+		FAD4587818C128AB0068C100 /* RTViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RTViewController.h; sourceTree = "<group>"; };
+		FAD4587918C128AB0068C100 /* RTViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RTViewController.m; sourceTree = "<group>"; };
+		FAD4587B18C128AB0068C100 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		FAD4588118C128AC0068C100 /* Stock BoyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Stock BoyTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FAD4588218C128AC0068C100 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		FAD4588A18C128AC0068C100 /* Stock BoyTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Stock BoyTests-Info.plist"; sourceTree = "<group>"; };
+		FAD4588C18C128AC0068C100 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		FAD4588E18C128AC0068C100 /* Stock_BoyTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Stock_BoyTests.m; sourceTree = "<group>"; };
+		FAD4589818C12B9A0068C100 /* stock boy placeholder Sergey Konyakin.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "stock boy placeholder Sergey Konyakin.jpg"; sourceTree = "<group>"; };
+		FAD4589E18C12FFA0068C100 /* RTStocksTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RTStocksTableViewController.h; sourceTree = "<group>"; };
+		FAD4589F18C12FFA0068C100 /* RTStocksTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RTStocksTableViewController.m; sourceTree = "<group>"; };
+		FAD458A118C1306A0068C100 /* RTStockTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RTStockTableViewCell.h; sourceTree = "<group>"; };
+		FAD458A218C1306A0068C100 /* RTStockTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RTStockTableViewCell.m; sourceTree = "<group>"; };
+		FAD458A418C139CD0068C100 /* RTStock.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RTStock.h; sourceTree = "<group>"; };
+		FAD458A518C139CD0068C100 /* RTStock.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RTStock.m; sourceTree = "<group>"; };
+		FAD458A718C139EB0068C100 /* RTStartingStockFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RTStartingStockFactory.h; sourceTree = "<group>"; };
+		FAD458A818C139EB0068C100 /* RTStartingStockFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RTStartingStockFactory.m; sourceTree = "<group>"; };
+		FAFA813818C2CEBA003E34B0 /* RTPlayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RTPlayer.h; sourceTree = "<group>"; };
+		FAFA813918C2CEBA003E34B0 /* RTPlayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RTPlayer.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FAD4585A18C128AB0068C100 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FAD4586318C128AB0068C100 /* CoreGraphics.framework in Frameworks */,
+				FAD4586518C128AB0068C100 /* UIKit.framework in Frameworks */,
+				FAD4586118C128AB0068C100 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FAD4587E18C128AC0068C100 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FAD4588318C128AC0068C100 /* XCTest.framework in Frameworks */,
+				FAD4588518C128AC0068C100 /* UIKit.framework in Frameworks */,
+				FAD4588418C128AC0068C100 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FAD4585418C128AB0068C100 = {
+			isa = PBXGroup;
+			children = (
+				FAD4586618C128AB0068C100 /* Stock Boy */,
+				FAD4588818C128AC0068C100 /* Stock BoyTests */,
+				FAD4585F18C128AB0068C100 /* Frameworks */,
+				FAD4585E18C128AB0068C100 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		FAD4585E18C128AB0068C100 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FAD4585D18C128AB0068C100 /* Stock Boy.app */,
+				FAD4588118C128AC0068C100 /* Stock BoyTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FAD4585F18C128AB0068C100 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FAD4586018C128AB0068C100 /* Foundation.framework */,
+				FAD4586218C128AB0068C100 /* CoreGraphics.framework */,
+				FAD4586418C128AB0068C100 /* UIKit.framework */,
+				FAD4588218C128AC0068C100 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FAD4586618C128AB0068C100 /* Stock Boy */ = {
+			isa = PBXGroup;
+			children = (
+				FAD4586F18C128AB0068C100 /* RTAppDelegate.h */,
+				FAD4587018C128AB0068C100 /* RTAppDelegate.m */,
+				FAD4589A18C12BBE0068C100 /* Controller */,
+				FAD4589B18C12BDD0068C100 /* View */,
+				FAD4589D18C12C180068C100 /* Model */,
+				FAD4589C18C12C040068C100 /* Assets */,
+				FAD4587B18C128AB0068C100 /* Images.xcassets */,
+				FAD4586718C128AB0068C100 /* Supporting Files */,
+			);
+			path = "Stock Boy";
+			sourceTree = "<group>";
+		};
+		FAD4586718C128AB0068C100 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				FAD4586818C128AB0068C100 /* Stock Boy-Info.plist */,
+				FAD4586918C128AB0068C100 /* InfoPlist.strings */,
+				FAD4586C18C128AB0068C100 /* main.m */,
+				FAD4586E18C128AB0068C100 /* Stock Boy-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		FAD4588818C128AC0068C100 /* Stock BoyTests */ = {
+			isa = PBXGroup;
+			children = (
+				FAD4588E18C128AC0068C100 /* Stock_BoyTests.m */,
+				FAD4588918C128AC0068C100 /* Supporting Files */,
+			);
+			path = "Stock BoyTests";
+			sourceTree = "<group>";
+		};
+		FAD4588918C128AC0068C100 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				FAD4588A18C128AC0068C100 /* Stock BoyTests-Info.plist */,
+				FAD4588B18C128AC0068C100 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		FAD4589A18C12BBE0068C100 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				FAD4587818C128AB0068C100 /* RTViewController.h */,
+				FAD4587918C128AB0068C100 /* RTViewController.m */,
+				FAD4589E18C12FFA0068C100 /* RTStocksTableViewController.h */,
+				FAD4589F18C12FFA0068C100 /* RTStocksTableViewController.m */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		FAD4589B18C12BDD0068C100 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				FAD4587218C128AB0068C100 /* Main_iPhone.storyboard */,
+				FAD4587518C128AB0068C100 /* Main_iPad.storyboard */,
+				FAD458A118C1306A0068C100 /* RTStockTableViewCell.h */,
+				FAD458A218C1306A0068C100 /* RTStockTableViewCell.m */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		FAD4589C18C12C040068C100 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				FA62F8C118C413F7004A9269 /* Icon-40@2x.png */,
+				FA62F8C218C413F7004A9269 /* Icon-60.png */,
+				FA62F8C318C413F7004A9269 /* Icon-60@2x.png */,
+				FA62F8C418C413F7004A9269 /* Icon-72.png */,
+				FA62F8C018C413F7004A9269 /* Icon-40.png */,
+				FA62F8C518C413F7004A9269 /* Icon-72@2x.png */,
+				FA62F8C618C413F7004A9269 /* Icon-76.png */,
+				FA62F8C718C413F7004A9269 /* Icon-76@2x.png */,
+				FA62F8C818C413F7004A9269 /* Icon-Small-50.png */,
+				FA62F8C918C413F7004A9269 /* Icon-Small-50@2x.png */,
+				FA62F8CA18C413F7004A9269 /* Icon-Small.png */,
+				FA62F8CB18C413F7004A9269 /* Icon-Small@2x.png */,
+				FA62F8CC18C413F7004A9269 /* Icon.png */,
+				FA62F8CD18C413F7004A9269 /* Icon@2x.png */,
+				FA62F8CE18C413F7004A9269 /* iTunesArtwork.png */,
+				FA62F8CF18C413F7004A9269 /* iTunesArtwork@2x.png */,
+				FAD4589818C12B9A0068C100 /* stock boy placeholder Sergey Konyakin.jpg */,
+			);
+			name = Assets;
+			sourceTree = "<group>";
+		};
+		FAD4589D18C12C180068C100 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				FAFA813818C2CEBA003E34B0 /* RTPlayer.h */,
+				FAFA813918C2CEBA003E34B0 /* RTPlayer.m */,
+				FAD458A418C139CD0068C100 /* RTStock.h */,
+				FAD458A518C139CD0068C100 /* RTStock.m */,
+				FAD458A718C139EB0068C100 /* RTStartingStockFactory.h */,
+				FAD458A818C139EB0068C100 /* RTStartingStockFactory.m */,
+				FA62F8E018C41E36004A9269 /* UIColor+ColorConjurer.h */,
+				FA62F8E118C41E36004A9269 /* UIColor+ColorConjurer.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FAD4585C18C128AB0068C100 /* Stock Boy */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FAD4589218C128AC0068C100 /* Build configuration list for PBXNativeTarget "Stock Boy" */;
+			buildPhases = (
+				FAD4585918C128AB0068C100 /* Sources */,
+				FAD4585A18C128AB0068C100 /* Frameworks */,
+				FAD4585B18C128AB0068C100 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Stock Boy";
+			productName = "Stock Boy";
+			productReference = FAD4585D18C128AB0068C100 /* Stock Boy.app */;
+			productType = "com.apple.product-type.application";
+		};
+		FAD4588018C128AC0068C100 /* Stock BoyTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FAD4589518C128AC0068C100 /* Build configuration list for PBXNativeTarget "Stock BoyTests" */;
+			buildPhases = (
+				FAD4587D18C128AC0068C100 /* Sources */,
+				FAD4587E18C128AC0068C100 /* Frameworks */,
+				FAD4587F18C128AC0068C100 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FAD4588718C128AC0068C100 /* PBXTargetDependency */,
+			);
+			name = "Stock BoyTests";
+			productName = "Stock BoyTests";
+			productReference = FAD4588118C128AC0068C100 /* Stock BoyTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FAD4585518C128AB0068C100 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = RT;
+				LastUpgradeCheck = 0500;
+				ORGANIZATIONNAME = "Ryo Tulman";
+				TargetAttributes = {
+					FAD4588018C128AC0068C100 = {
+						TestTargetID = FAD4585C18C128AB0068C100;
+					};
+				};
+			};
+			buildConfigurationList = FAD4585818C128AB0068C100 /* Build configuration list for PBXProject "Stock Boy" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FAD4585418C128AB0068C100;
+			productRefGroup = FAD4585E18C128AB0068C100 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FAD4585C18C128AB0068C100 /* Stock Boy */,
+				FAD4588018C128AC0068C100 /* Stock BoyTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FAD4585B18C128AB0068C100 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FA62F8DC18C413F7004A9269 /* Icon.png in Resources */,
+				FA62F8DA18C413F7004A9269 /* Icon-Small.png in Resources */,
+				FAD4587718C128AB0068C100 /* Main_iPad.storyboard in Resources */,
+				FA62F8D818C413F7004A9269 /* Icon-Small-50.png in Resources */,
+				FA62F8D418C413F7004A9269 /* Icon-72.png in Resources */,
+				FA62F8DB18C413F7004A9269 /* Icon-Small@2x.png in Resources */,
+				FAD4587C18C128AB0068C100 /* Images.xcassets in Resources */,
+				FA62F8D718C413F7004A9269 /* Icon-76@2x.png in Resources */,
+				FA62F8D218C413F7004A9269 /* Icon-60.png in Resources */,
+				FA62F8D018C413F7004A9269 /* Icon-40.png in Resources */,
+				FA62F8D618C413F7004A9269 /* Icon-76.png in Resources */,
+				FAD4587418C128AB0068C100 /* Main_iPhone.storyboard in Resources */,
+				FA62F8D318C413F7004A9269 /* Icon-60@2x.png in Resources */,
+				FA62F8D118C413F7004A9269 /* Icon-40@2x.png in Resources */,
+				FAD4589918C12B9B0068C100 /* stock boy placeholder Sergey Konyakin.jpg in Resources */,
+				FA62F8DD18C413F7004A9269 /* Icon@2x.png in Resources */,
+				FA62F8DF18C413F7004A9269 /* iTunesArtwork@2x.png in Resources */,
+				FA62F8D918C413F7004A9269 /* Icon-Small-50@2x.png in Resources */,
+				FAD4586B18C128AB0068C100 /* InfoPlist.strings in Resources */,
+				FA62F8DE18C413F7004A9269 /* iTunesArtwork.png in Resources */,
+				FA62F8D518C413F7004A9269 /* Icon-72@2x.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FAD4587F18C128AC0068C100 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FAD4588D18C128AC0068C100 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FAD4585918C128AB0068C100 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FAFA813A18C2CEBA003E34B0 /* RTPlayer.m in Sources */,
+				FAD458A018C12FFA0068C100 /* RTStocksTableViewController.m in Sources */,
+				FAD458A918C139EB0068C100 /* RTStartingStockFactory.m in Sources */,
+				FAD458A318C1306A0068C100 /* RTStockTableViewCell.m in Sources */,
+				FAD458A618C139CD0068C100 /* RTStock.m in Sources */,
+				FAD4587118C128AB0068C100 /* RTAppDelegate.m in Sources */,
+				FA62F8E218C41E36004A9269 /* UIColor+ColorConjurer.m in Sources */,
+				FAD4587A18C128AB0068C100 /* RTViewController.m in Sources */,
+				FAD4586D18C128AB0068C100 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FAD4587D18C128AC0068C100 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FAD4588F18C128AC0068C100 /* Stock_BoyTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FAD4588718C128AC0068C100 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FAD4585C18C128AB0068C100 /* Stock Boy */;
+			targetProxy = FAD4588618C128AC0068C100 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		FAD4586918C128AB0068C100 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FAD4586A18C128AB0068C100 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		FAD4587218C128AB0068C100 /* Main_iPhone.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FAD4587318C128AB0068C100 /* Base */,
+			);
+			name = Main_iPhone.storyboard;
+			sourceTree = "<group>";
+		};
+		FAD4587518C128AB0068C100 /* Main_iPad.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FAD4587618C128AB0068C100 /* Base */,
+			);
+			name = Main_iPad.storyboard;
+			sourceTree = "<group>";
+		};
+		FAD4588B18C128AC0068C100 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FAD4588C18C128AC0068C100 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FAD4589018C128AC0068C100 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		FAD4589118C128AC0068C100 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FAD4589318C128AC0068C100 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Stock Boy/Stock Boy-Prefix.pch";
+				INFOPLIST_FILE = "Stock Boy/Stock Boy-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		FAD4589418C128AC0068C100 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Stock Boy/Stock Boy-Prefix.pch";
+				INFOPLIST_FILE = "Stock Boy/Stock Boy-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		FAD4589618C128AC0068C100 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Stock Boy.app/Stock Boy";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Stock Boy/Stock Boy-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "Stock BoyTests/Stock BoyTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		FAD4589718C128AC0068C100 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Stock Boy.app/Stock Boy";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Stock Boy/Stock Boy-Prefix.pch";
+				INFOPLIST_FILE = "Stock BoyTests/Stock BoyTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FAD4585818C128AB0068C100 /* Build configuration list for PBXProject "Stock Boy" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FAD4589018C128AC0068C100 /* Debug */,
+				FAD4589118C128AC0068C100 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FAD4589218C128AC0068C100 /* Build configuration list for PBXNativeTarget "Stock Boy" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FAD4589318C128AC0068C100 /* Debug */,
+				FAD4589418C128AC0068C100 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FAD4589518C128AC0068C100 /* Build configuration list for PBXNativeTarget "Stock BoyTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FAD4589618C128AC0068C100 /* Debug */,
+				FAD4589718C128AC0068C100 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FAD4585518C128AB0068C100 /* Project object */;
+}
