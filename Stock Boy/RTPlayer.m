@@ -44,6 +44,9 @@
     if (!currentHolding) {
         [self.stockHoldings removeObjectForKey:stock.name];
     }
+}
+
+-(void)liquidateAllStockHoldings {
 
 }
 

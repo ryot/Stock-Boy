@@ -18,6 +18,6 @@
 
 -(void)addToStockHoldings:(RTStock *)stock quantity:(NSInteger)quantity;
 -(void)removeFromStockHoldings:(RTStock *)stock quantity:(NSInteger)quantity;
-
+-(void)liquidateAllStockHoldings;
 
 @end

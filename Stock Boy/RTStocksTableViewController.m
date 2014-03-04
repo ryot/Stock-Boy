@@ -14,6 +14,7 @@
 
 @interface RTStocksTableViewController ()
 
+@property (weak, nonatomic) IBOutlet UIView *floatingStatus;
 @property (nonatomic, strong) NSMutableArray *stocks;
 @property (nonatomic, weak) IBOutlet UILabel *cashLabel;
 @property (nonatomic, strong) NSTimer *timer;
@@ -44,6 +45,8 @@
  
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
+    [self.view addSubview:self.floatingStatus];
+    
     self.stocks = [RTStartingStockFactory generateStartingStocks];
     self.player = [[RTPlayer alloc] init];
     self.cashLabel.text = [@"$" stringByAppendingString:[@(self.player.cash) stringValue]];
@@ -51,7 +54,7 @@
     self.livingExpenseAmountLabel.textColor = [UIColor clearColor];
     self.livingExpense = 10;
     self.counter = 0;
-    self.timer = [NSTimer scheduledTimerWithTimeInterval:0.15f
+    self.timer = [NSTimer scheduledTimerWithTimeInterval:0.17f
                                                   target:self
                                                 selector:@selector(timerUpdate)
                                                 userInfo:nil
@@ -97,6 +100,14 @@
     }
     return cell;
 }
+
+- (void)scrollViewDidScroll:(UIScrollView *)scrollView {
+    CGRect frame = self.floatingStatus.frame;
+    frame.origin.y = scrollView.contentOffset.y;
+    self.floatingStatus.frame = frame;
+    [self.view bringSubviewToFront:self.floatingStatus];
+}
+
 - (IBAction)buyOnePressed:(id)sender {
     RTStockTableViewCell *cell = (RTStockTableViewCell *)[[[sender superview] superview] superview];
     if ((cell)&&(self.player.cash > cell.cellStock.price)) {
@@ -157,21 +168,21 @@
         self.livingExpenseAmountLabel.textColor = [UIColor redColor];
         self.player.cash -= self.livingExpense;
         self.cashLabel.text = [@"$" stringByAppendingString:[NSString stringWithFormat:@"%ld", self.player.cash]];
-        self.livingExpense *= 1.15;
+        self.livingExpense *= 1.1;
     } else {
         self.livingExpenseLabel.textColor = [UIColor alphaFadeGivenColor:self.livingExpenseLabel.textColor];
         self.livingExpenseAmountLabel.textColor = [UIColor alphaFadeGivenColor:self.livingExpenseAmountLabel.textColor];
     }
     for (RTStock *thisStock in self.stocks) {
         NSInteger priceChange;
-        NSInteger r = arc4random_uniform(60);
-        if (r > 12) {
+        NSInteger r = arc4random_uniform(55);
+        if (r > 10) {
             priceChange = 0;
-        } else if (r > 10) {
+        } else if (r > 9) {
             priceChange = -3;
         } else if (r > 8) {
             priceChange = -2;
-        } else if(r > 6) {
+        } else if (r > 5) {
             priceChange = -1;
         } else if (r > 4) {
             priceChange = 3;
@@ -181,10 +192,10 @@
             priceChange = 1;
         }
         if (priceChange > 0) {
-            thisStock.stockCell.backgroundColor = [UIColor colorWithRed:0.9 green:1.000 blue:0.95 alpha:1.000];
+            thisStock.stockCell.backgroundColor = [UIColor colorWithRed:0.91 green:1.000 blue:0.96 alpha:1.000];
             //thisStock.stockCell.backgroundColor = [UIColor greenenGivenColor:thisStock.stockCell.backgroundColor];
         } else if (priceChange < 0) {
-            thisStock.stockCell.backgroundColor = [UIColor colorWithRed:1.000 green:0.9 blue:0.95 alpha:1.000];
+            thisStock.stockCell.backgroundColor = [UIColor colorWithRed:1.000 green:0.91 blue:0.96 alpha:1.000];
             //thisStock.stockCell.backgroundColor = [UIColor reddenGivenColor:thisStock.stockCell.backgroundColor];
         } else  if (priceChange == 0) {
             thisStock.stockCell.backgroundColor = [UIColor lightenGivenColor:thisStock.stockCell.backgroundColor];
@@ -196,9 +207,12 @@
     }
     [self.tableView reloadData];
     self.counter++;
-    //check if game over
+    //check if liquidation needed
     if (self.player.cash < 0) {
-        [self gameOver];
+        [self.player liquidateAllStockHoldings];
+        if (self.player.cash < 0) {
+            [self gameOver];
+        }
     }
 }
 
@@ -208,6 +222,7 @@
     self.livingExpenseAmountLabel.hidden = YES;
     self.cashLabel.text = @"BANKRUPT";
     self.cashLabel.textColor = [UIColor redColor];
+    self.tableView.contentOffset = CGPointMake(0, 0 - self.tableView.contentInset.top);
     [self.view setUserInteractionEnabled:NO];
 }
 

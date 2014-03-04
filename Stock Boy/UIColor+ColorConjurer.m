@@ -25,7 +25,7 @@
 +(UIColor *)lightenGivenColor:(UIColor *)givenColor {
     CGFloat r,g,b,a;
     [givenColor getRed:&r green:&g blue:&b alpha:&a];
-    return [UIColor colorWithRed:r*1.03 green:g*1.03 blue:b*1.03 alpha:1.0];
+    return [UIColor colorWithRed:r*1.02 green:g*1.02 blue:b*1.02 alpha:1.0];
 }
 
 +(UIColor *)alphaFadeGivenColor:(UIColor *)givenColor {

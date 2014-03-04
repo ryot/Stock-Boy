@@ -212,6 +212,7 @@
                     <navigationItem key="navigationItem" title="Stocks" id="IMu-zM-afg"/>
                     <connections>
                         <outlet property="cashLabel" destination="sFY-eP-bKk" id="M39-lZ-7Js"/>
+                        <outlet property="floatingStatus" destination="aKt-sW-24y" id="cna-xO-7EZ"/>
                         <outlet property="livingExpenseAmountLabel" destination="89V-vv-PDE" id="qkm-3A-SiF"/>
                         <outlet property="livingExpenseLabel" destination="kHN-xx-7Ig" id="f9B-uN-IML"/>
                     </connections>
